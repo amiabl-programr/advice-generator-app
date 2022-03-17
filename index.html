@@ -16,9 +16,33 @@
   <body>
     <main>
       <div class="advice__container">
-        <h1>Advice #<!-- Advice ID goes here --></h1>
-        <p>"<!-- Advice text goes here -->dfldjfldkjfkdjfkdf"</p>
-        <picture></picture>
+        <h1>
+          Advice #<span class="advice__id"></span>
+          <!-- Advice ID goes here -->
+        </h1>
+        <p class="advice__content">
+          "<!-- Advice text goes here -->dfldjfldkjfkdjfkdf"
+        </p>
+
+        <!-- <picture>
+          <source
+            media="(min-width: 375px)"
+            srcset="./images/pattern-divider-mobile.svg"
+            width="375px"
+            height="100px"
+          />
+        </picture>
+        <br /> -->
+
+        <img
+          src="./images/pattern-divider-mobile.svg"
+          alt=" line divider"
+          class="line__divider"
+        />
+
+        <div class="dice__container">
+          <img src="./images/icon-dice.svg" alt="icon-dice" class="icon-dice" />
+        </div>
       </div>
     </main>
 
