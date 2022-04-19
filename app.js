@@ -20,5 +20,6 @@ function getAdvice() {
       advice_content.innerHTML = output_content;
     });
 }
-
 getAdvice();
+// Next.......
+// Add an event listener an link it to the button
