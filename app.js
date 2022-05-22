@@ -1,5 +1,8 @@
 var advice_id = document.querySelector(".advice__id");
 var advice_content = document.querySelector(".advice__content");
+var dice_container = document.querySelector(".dice__container");
+
+getAdvice();
 
 function getAdvice() {
   const URL = "https://api.adviceslip.com/advice";
@@ -8,8 +11,9 @@ function getAdvice() {
     .then((data) => {
       let output_id = "";
       let output_content = "";
-      let data_array = Object.entries(data); // flexiple.com/loop-through-object-javascript
-      // console.log(data_array[0][1].advice);
+      let data_array =
+        Object.entries(data); /* flexiple.com/loop-through-object-javascript ---
+         this was done bcos the data fetched is an object, so I had to convert it to an array first */
       data_array.forEach((advice) => {
         // console.log(advice[1].id);
         // console.log(advice[1].advice);
@@ -19,7 +23,9 @@ function getAdvice() {
       advice_id.innerHTML = output_id;
       advice_content.innerHTML = output_content;
     });
+  // alert("data fetched");
 }
-getAdvice();
+
 // Next.......
 // Add an event listener an link it to the button
+dice_container.addEventListener("click", getAdvice);
