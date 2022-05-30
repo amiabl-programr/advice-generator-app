@@ -21,7 +21,7 @@ function getAdvice() {
         output_content += advice[1].advice;
       });
       advice_id.innerHTML = output_id;
-      advice_content.innerHTML = output_content;
+      advice_content.innerHTML = `" ${output_content} "`;
     });
   // alert("data fetched");
 }
