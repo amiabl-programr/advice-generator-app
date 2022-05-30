@@ -22,7 +22,6 @@ main {
 h1 {
   color: hsl(150, 100%, 66%);
   margin-top: 47px;
-  margin-bottom: 20px;
   font-size: 14px;
 }
 .advice__container {
