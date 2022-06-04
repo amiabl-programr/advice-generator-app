@@ -11,8 +11,8 @@ function getAdvice() {
     .then((data) => {
       let output_id = "";
       let output_content = "";
-      let data_array =
-        Object.entries(data); /* flexiple.com/loop-through-object-javascript ---
+      data_array = Object.entries(data);
+      /* flexiple.com/loop-through-object-javascript ---
          this was done bcos the data fetched is an object, so I had to convert it to an array first */
       data_array.forEach((advice) => {
         // console.log(advice[1].id);
@@ -21,9 +21,8 @@ function getAdvice() {
         output_content += advice[1].advice;
       });
       advice_id.innerHTML = output_id;
-      advice_content.innerHTML = `" ${output_content} "`;
+      advice_content.innerHTML = `"${output_content}"`;
     });
-  // alert("data fetched");
 }
 
 // Next.......
