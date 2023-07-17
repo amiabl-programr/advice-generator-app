@@ -22,6 +22,17 @@ main {
 }
 
 /* loading animation */
+.lds-hourglass:not([hidden]) {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lds-hourglass {
   display: inline-block;
   position: relative;
@@ -77,6 +88,11 @@ h1 {
   align-items: center;
   border-radius: 0.5rem;
   position: relative;
+}
+.advice__container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .advice__content {
   color: hsl(193, 38%, 86%);

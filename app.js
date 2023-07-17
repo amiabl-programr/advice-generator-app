@@ -9,6 +9,8 @@ var loadingAnimation = document.querySelector(".lds-hourglass");
 getAdvice();
 getCurrentDate();
 
+
+
 function getAdvice() {
   const URL = "https://api.adviceslip.com/advice";
   fetch(URL)
@@ -50,7 +52,6 @@ function getCurrentDate() {
   secondsDiv.textContent = `${seconds} ${suffixAmPm}`;
   console.log(hour, minutes, seconds)
 }
-
 
 // run the getCurrentDate function every second
 setInterval(getCurrentDate, 1000);
